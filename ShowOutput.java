@@ -1,7 +1,5 @@
 /* 
         Code for OOM Assignment 5a by LUV || IIT2016085
-        
-        Credits : initComponents() is a netbeans generated code with few modifications of own
 */
 
 package StudentDatabase;
@@ -12,7 +10,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 
-public class ShowOutput extends javax.swing.JFrame {
+public class ShowOutput extends JFrame {
     private JButton Next;
     private JLabel data;
     private JButton jButton3;
@@ -190,7 +188,13 @@ public class ShowOutput extends javax.swing.JFrame {
         pack();
     }                     
 
-    private void jButton3ActionPerformed(ActionEvent evt){                                         
+    private void jButton3ActionPerformed(ActionEvent evt){
+        size = batch.getstudentsize(); 
+        System.out.println(size);                                       
+        if(size == 0){
+            JOptionPane.showMessageDialog(this, "No Record found to Delete", "Inane error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
         batch.deletedata(cur);
         size = batch.getstudentsize();
         if(size == 0){
