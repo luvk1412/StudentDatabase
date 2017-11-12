@@ -12,7 +12,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 
-public class Entry extends javax.swing.JFrame {
+public class Entry extends JFrame {
     private JPanel PPG;
     private JPanel PPGPHD;
     private JPanel PPHD;
