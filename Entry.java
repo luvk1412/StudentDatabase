@@ -1,5 +1,7 @@
 /* 
         Code for OOM Assignment 5a by LUV || IIT2016085
+        
+        Credits : initComponents() is a netbeans generated code with few modifications of own
 */
 
 package StudentDatabase;
